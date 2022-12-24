@@ -1,0 +1,11 @@
+<div class="button">
+    <button (click)="addCurso(name.value)" >Add</button>
+  </div>
+<div class="input">
+  <input type="text" #name />
+</div>
+<div class="curso shadow p-3 rounded bg-light">
+  <div *ngFor="let nom of arrayC" class="lista">
+    <li>{{ nom }}</li>
+  </div>
+</div>
